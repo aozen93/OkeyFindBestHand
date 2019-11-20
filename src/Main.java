@@ -247,7 +247,7 @@ public class Main {
             }
         }
 
-        if (indexOf(okey, stones) != -1) { // TODO perlist.size 3ten büyükse aslında gerek yok yeterse vakit en son a ekle okey kontrolü.
+        if (indexOf(okey, stones) != -1) {
             Stone nextStoneFromOkey = getNextStone(nextStone);
             int indexOfNextStoneFromOkey = indexOf(nextStoneFromOkey, stones);
             if (indexOfNextStoneFromOkey != -1) {
