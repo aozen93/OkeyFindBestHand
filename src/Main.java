@@ -137,8 +137,7 @@ public class Main {
 
     }
 
-    // yollanan stone listeden silinipte yollanıyor. !!
-    //return de per olan diziler var
+    // gelen stone listeden silinipte yollanıyor.
     private static List<Stone> sortStoneForSameValueAndDiffColor(Stone stone, List<Stone> stones) {
         int stoneVal = stone.getValue();
         List<Stone> perList = new ArrayList<>();
@@ -237,7 +236,6 @@ public class Main {
                 perList.add(stones.remove(indexOfNextStone));
                 return;
             }
-            // TODO burda 13 1 2 kontrolü yapılabilir.
             perList.add(stones.remove(indexOfNextStone));
             sortStonesForSequentPer(nextStone, stones, perList);
         }
